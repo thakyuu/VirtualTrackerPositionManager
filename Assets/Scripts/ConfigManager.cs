@@ -157,7 +157,7 @@ public class ConfigManager : MonoBehaviour
 		}
 	}
 
-	bool IsConfigDataExists()
+	private static bool IsConfigDataExists()
 	{
 		const string file = SavePath + "\\config.json";
 		
