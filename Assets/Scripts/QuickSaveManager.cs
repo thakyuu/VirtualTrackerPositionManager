@@ -158,7 +158,7 @@ public class QuickSaveManager : MonoBehaviour
 		slot.Foot_R_Position = V_Foot_R.transform.position;
 		slot.Foot_R_Rotation = V_Foot_R.transform.rotation;
 
-		var json = JsonUtility.ToJson(slot);
+		var json = JsonUtility.ToJson(slot, true);
 
 		if (!Directory.Exists(SavePath))
 		{

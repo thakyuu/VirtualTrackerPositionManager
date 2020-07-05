@@ -124,7 +124,7 @@ public class ConfigManager : MonoBehaviour
 
 		_config.ConfVersion = ConfigVersion;
 
-		var json = JsonUtility.ToJson(_config);
+		var json = JsonUtility.ToJson(_config, true);
 
 		if (!Directory.Exists(SavePath))
 		{
