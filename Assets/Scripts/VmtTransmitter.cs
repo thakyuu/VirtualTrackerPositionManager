@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VMTTransmitter : MonoBehaviour
+public class VmtTransmitter : MonoBehaviour
 {
-	uOSC.uOscClient _client;
+	private uOSC.uOscClient _client;
 	[SerializeField] private int clientIndex = 0;
 	[SerializeField] public int isEnable = 1;
 	void Start()
@@ -14,14 +14,18 @@ public class VMTTransmitter : MonoBehaviour
 
 	void Update()
 	{
+		var trans = transform;
+		var position = trans.position;
+		var rotation = trans.rotation;
+
 		_client.Send("/VMT/Room/Unity", (int)clientIndex, (int)isEnable, (float)0f,
-			(float)transform.position.x,
-			(float)transform.position.y,
-			(float)transform.position.z,
-			(float)transform.rotation.x,
-			(float)transform.rotation.y,
-			(float)transform.rotation.z,
-			(float)transform.rotation.w
+			(float)position.x,
+			(float)position.y,
+			(float)position.z,
+			(float)rotation.x,
+			(float)rotation.y,
+			(float)rotation.z,
+			(float)rotation.w
 		);
 	}
 }

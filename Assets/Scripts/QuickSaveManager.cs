@@ -30,8 +30,6 @@ public class QuickSaveManager : MonoBehaviour
 	private TrackerTransform Slot2;
 	private TrackerTransform Slot3;
 	
-	private ConfigManager.ConfigData _config = null;
-	
 	[Serializable]
 	private class TrackerTransform
 	{
@@ -46,7 +44,7 @@ public class QuickSaveManager : MonoBehaviour
 
 	public void QuickSaveWithDialog(int slotNum)
 	{
-		if (!IsSaveDataExists(slotNum) || !_config.isDialogSaveLoad)
+		if (!IsSaveDataExists(slotNum) || !configManager.GetConfig().isDialogSaveLoad)
 		{
 			QuickSave(slotNum);
 			return;
@@ -76,7 +74,7 @@ public class QuickSaveManager : MonoBehaviour
 			return;
 		}
 
-		if (!_config.isDialogSaveLoad)
+		if (!configManager.GetConfig().isDialogSaveLoad)
 		{
 			QuickLoad(slotNum);
 			return;
@@ -211,17 +209,5 @@ public class QuickSaveManager : MonoBehaviour
 		{
 			return false;
 		}
-	}
-
-	// Start is called before the first frame update
-	void Start()
-	{
-		
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-		_config = configManager.GetConfig();
 	}
 }

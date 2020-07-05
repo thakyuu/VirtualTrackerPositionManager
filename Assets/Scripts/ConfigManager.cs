@@ -31,9 +31,9 @@ public class ConfigManager : MonoBehaviour
 		public bool isDialogSaveLoad = true;
 	}
 
-	void ShowModalInfoDialog(string Message)
+	void ShowModalInfoDialog(string message)
 	{
-		ModalInfoDialogText.text = Message;
+		ModalInfoDialogText.text = message;
 		ModalInfoDialog.SetActive(true);
 	}
 
@@ -52,7 +52,7 @@ public class ConfigManager : MonoBehaviour
 		SettingsPanel.SetActive(false);
 	}
 
-	public void SetDialogSaveLoad(bool State)
+	public void SetDialogSaveLoad(bool state)
 	{
 		_config.isDialogSaveLoad = DialogSaveLoad.isOn;
 		SaveConfig();
@@ -73,11 +73,11 @@ public class ConfigManager : MonoBehaviour
 		}
 	}
 
-	public void SetMenuLock(bool State)
+	public void SetMenuLock(bool state)
 	{
-		_config.isMenuLock = State;
+		_config.isMenuLock = state;
 		SaveConfig();
-		if (State)
+		if (state)
 		{
 			ShowModalInfoDialog("Set Menu Lock: Enable");
 		}
@@ -87,9 +87,9 @@ public class ConfigManager : MonoBehaviour
 		}
 	}
 
-	public void SetMenuHand(int Hand)
+	public void SetMenuHand(int hand)
 	{
-		switch (Hand)
+		switch (hand)
 		{
 			case 0: 
 				_config.isMenuLeftHand = true;
@@ -174,11 +174,5 @@ public class ConfigManager : MonoBehaviour
 	{
 		LoadConfig();
 		DialogSaveLoad.isOn = _config.isDialogSaveLoad; 
-	}
-
-	// Update is called once per frame
-	void Update()
-	{
-		
 	}
 }

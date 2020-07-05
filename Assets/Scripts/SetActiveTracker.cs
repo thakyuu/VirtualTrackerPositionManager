@@ -36,16 +36,16 @@ public class SetActiveTracker : MonoBehaviour
 
 	public void TrackerEnable()
 	{
-		T_Chest.GetComponent<VMTTransmitter>().isEnable = 1;
-		T_Foot_L.GetComponent<VMTTransmitter>().isEnable = 1;
-		T_Foot_R.GetComponent<VMTTransmitter>().isEnable = 1;
+		T_Chest.GetComponent<VmtTransmitter>().isEnable = 1;
+		T_Foot_L.GetComponent<VmtTransmitter>().isEnable = 1;
+		T_Foot_R.GetComponent<VmtTransmitter>().isEnable = 1;
 	}
 
 	public void TrackerDisable()
 	{
-		T_Chest.GetComponent<VMTTransmitter>().isEnable = 0;
-		T_Foot_L.GetComponent<VMTTransmitter>().isEnable = 0;
-		T_Foot_R.GetComponent<VMTTransmitter>().isEnable = 0;
+		T_Chest.GetComponent<VmtTransmitter>().isEnable = 0;
+		T_Foot_L.GetComponent<VmtTransmitter>().isEnable = 0;
+		T_Foot_R.GetComponent<VmtTransmitter>().isEnable = 0;
 	}
 
 	public void SetTrackerState(bool isEnable)
