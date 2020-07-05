@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="459aaf39-4bcf-4eb5-b74a-554b149f6285" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/GetRealTracking.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SetActiveVirtualPosition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/WindowMinimizeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GetTrackerTransform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EasyOpenVROverlayForUnity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/QuickSaveManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VMTTransmitter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EasyOpenVRUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GetVRTransform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GetHMDTransform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../OpenVaNiiMenu-master/Assets/Scripts/MenuManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PositionManagerScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ConfigManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SetActiveTracker.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/VMT_HeadPositionFix.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/GetHMDTransform.cs" />
+        <option value="$PROJECT_DIR$/Assets/VMT_HeadPositionFix.cs" />
+        <option value="$PROJECT_DIR$/Assets/GetTrackerTransform.cs" />
+        <option value="$PROJECT_DIR$/Assets/GetVRTransform.cs" />
+        <option value="$PROJECT_DIR$/Assets/VMTTransmitter.cs" />
+        <option value="$PROJECT_DIR$/Assets/EasyOpenVRUtil.cs" />
+        <option value="$PROJECT_DIR$/Assets/WindowMinimizeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/SetActiveVirtualPosition.cs" />
+        <option value="$PROJECT_DIR$/Assets/SetActiveTracker.cs" />
+        <option value="$PROJECT_DIR$/Assets/PositionManagerScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/ConfigManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/QuickSaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/GetRealTracking.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dqNAZrRFqOQoQos16NGb3OTvRg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="459aaf39-4bcf-4eb5-b74a-554b149f6285" name="Default Changelist" comment="" />
+      <created>1593148521004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593148521004</updated>
+      <workItem from="1593148525637" duration="158000" />
+      <workItem from="1593148696027" duration="2115000" />
+      <workItem from="1593191308930" duration="15681000" />
+      <workItem from="1593257051241" duration="510000" />
+      <workItem from="1593257794253" duration="17000" />
+      <workItem from="1593312566568" duration="75000" />
+      <workItem from="1593313422427" duration="200000" />
+      <workItem from="1593313908807" duration="385000" />
+      <workItem from="1593314477677" duration="561000" />
+      <workItem from="1593492784668" duration="45390000" />
+      <workItem from="1593928640076" duration="284000" />
+      <workItem from="1593928955063" duration="1924000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state x="1649" y="826" key="SettingsEditor" timestamp="1593928984005">
+      <screen x="0" y="40" width="3840" height="2120" />
+    </state>
+    <state x="1649" y="826" key="SettingsEditor/0.40.3840.2120@0.40.3840.2120" timestamp="1593928984005" />
+    <state x="2483" y="834" width="672" height="678" key="search.everywhere.popup" timestamp="1593250388701">
+      <screen x="0" y="40" width="3840" height="2120" />
+    </state>
+    <state x="2483" y="834" width="672" height="678" key="search.everywhere.popup/0.40.3840.2120@0.40.3840.2120" timestamp="1593250388701" />
+  </component>
+</project>
