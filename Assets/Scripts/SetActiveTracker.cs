@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using uOSC;
 
 public class SetActiveTracker : MonoBehaviour
@@ -34,14 +32,14 @@ public class SetActiveTracker : MonoBehaviour
 		}
 	}
 
-	public void TrackerEnable()
+	private void TrackerEnable()
 	{
 		T_Chest.GetComponent<VmtTransmitter>().isEnable = 1;
 		T_Foot_L.GetComponent<VmtTransmitter>().isEnable = 1;
 		T_Foot_R.GetComponent<VmtTransmitter>().isEnable = 1;
 	}
 
-	public void TrackerDisable()
+	private void TrackerDisable()
 	{
 		T_Chest.GetComponent<VmtTransmitter>().isEnable = 0;
 		T_Foot_L.GetComponent<VmtTransmitter>().isEnable = 0;

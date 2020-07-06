@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.Versioning;
-using UnityEngine;
+﻿using UnityEngine;
 using EasyLazyLibrary;
-using UnityEditor;
 using UnityEngine.Animations;
 using UnityEngine.UI;
 using uOSC;
@@ -81,7 +77,7 @@ public class GetRealTracking : MonoBehaviour
 		eou.SetGameObjectTransformWithOffset(ref LeftHand_withOffset, LeftHandTrans, LeftHand_Offset);
 		eou.SetGameObjectTransformWithOffset(ref RightHand_withOffset, RightHandTrans, RightHand_Offset);
 		
-		ulong button = 0;
+		ulong button;
 
 		if (isFollowRightHand)
 		{
@@ -143,7 +139,7 @@ public class GetRealTracking : MonoBehaviour
 
 	public ulong GetControllerButton()
 	{
-		ulong button = 0;
+		ulong button;
 
 		eou.GetControllerButtonPressed(eou.GetRightControllerIndex(), out button);
 		if (button == 0)

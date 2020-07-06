@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using EasyLazyLibrary;
 using UnityEngine;
-using Valve.VR;
 
 public class QuickSaveManager : MonoBehaviour
 {
@@ -124,15 +120,15 @@ public class QuickSaveManager : MonoBehaviour
 		switch (slotNum)
 		{
 			case 1:
-				LoadTransform(Slot1, slotNum);
+				LoadTransform(slotNum);
 				Modal_QL_Slot1.SetActive(false);
 				break;
 			case 2:
-				LoadTransform(Slot2, slotNum);
+				LoadTransform(slotNum);
 				Modal_QL_Slot2.SetActive(false);
 				break;
 			case 3:
-				LoadTransform(Slot3, slotNum);
+				LoadTransform(slotNum);
 				Modal_QL_Slot3.SetActive(false);
 				break;
 			default:
@@ -165,36 +161,33 @@ public class QuickSaveManager : MonoBehaviour
 		File.WriteAllText(SavePath + "\\Slot" + slotNum + ".json", json, new UTF8Encoding(false));
 	}
 
-	private void LoadTransform(TrackerTransform Slot, int SlotNum)
+	private void LoadTransform(int slotNum)
 	{
-		var file = SavePath + "\\Slot" + SlotNum + ".json";
+		var file = SavePath + "\\Slot" + slotNum + ".json";
 		
-		Slot = null;
-
-		if (!IsSaveDataExists(SlotNum))
+		if (!IsSaveDataExists(slotNum))
 		{
 			return;
 		}
 
 		try
 		{
-			string jsonStr = File.ReadAllText(file, new UTF8Encoding(false));
-			Slot = JsonUtility.FromJson<TrackerTransform>(jsonStr);
+			var jsonStr = File.ReadAllText(file, new UTF8Encoding(false));
+			var slot = JsonUtility.FromJson<TrackerTransform>(jsonStr);
 
-			V_Chest.transform.SetPositionAndRotation(Slot.Chest_Position, Slot.Chest_Rotation);
-			V_Foot_L.transform.SetPositionAndRotation(Slot.Foot_L_Position, Slot.Foot_L_Rotation);
-			V_Foot_R.transform.SetPositionAndRotation(Slot.Foot_R_Position, Slot.Foot_R_Rotation);
+			V_Chest.transform.SetPositionAndRotation(slot.Chest_Position, slot.Chest_Rotation);
+			V_Foot_L.transform.SetPositionAndRotation(slot.Foot_L_Position, slot.Foot_L_Rotation);
+			V_Foot_R.transform.SetPositionAndRotation(slot.Foot_R_Position, slot.Foot_R_Rotation);
 		}
-		catch (System.Exception e)
+		catch (Exception e)
 		{
 			Debug.Log(e.ToString());
-			Slot = null;
 		}
 	}
 
-	private static bool IsSaveDataExists(int SlotNum)
+	private static bool IsSaveDataExists(int slotNum)
 	{
-		var file = SavePath + "\\Slot" + SlotNum + ".json";
+		var file = SavePath + "\\Slot" + slotNum + ".json";
 		
 		if (!Directory.Exists(SavePath))
 		{
